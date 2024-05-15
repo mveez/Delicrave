@@ -316,14 +316,14 @@
         width: auto;
         font-size: 2rem;
         text-align: center;
-        padding: 2rem 1.25rem;
+        padding: 2rem 0rem;
     }
     
     #navBar li a {
         display: inline;
         font-size: 2rem;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 2rem 1.25rem;
+        padding: 2rem 0rem;
     }
 }
 
