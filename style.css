@@ -1,3 +1,7 @@
+body { 
+    background-color: #F7D7E0;
+}
+
 .logo {
     background-color: #F7D7E0;
     display:flex;
@@ -6,15 +10,24 @@
     justify-content:center;
     width: 50%;
     height:100vh;
-    justify-content: space-evenly;
 }
 .carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
     width: 50%;
+}
+
+.crousel-inner{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item{
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 #juntos{
@@ -27,11 +40,22 @@
     font-optical-sizing: auto;
     font-weight: 650;
     font-style: bold;
-    font-variation-settings:
-      "ARRR" 10;
+    font-variation-settings: "ARRR" 10;
   }
   
 h2{
     display: flex;
     justify-content: center;
+}
+.sobre-nosotros{
+    text-align: justify;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem ;
+    padding: 0rem 3rem 0rem 3rem;
+
 }
