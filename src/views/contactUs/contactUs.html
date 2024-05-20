@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/src/assets/images/faivcon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" href="/src/styles/contactUs.css">
+        <link rel="stylesheet" href="/src/styles/navBar.css">
+        <title>CONTACTO</title>
+    </head>
+
+    <body>
+        <header>
+            <nav id="navBar"></nav>
+        </header>
+        
+        <main>
+            <section id="formSection" class="firstSection">
+                <h1>FORMULARIO DE CONTACTO</h1>
+                <p class="formSectionP">¿Queres decirnos algo? ¡Contactanos!</p>
+
+                <div class="formSectionDiv">
+                    <form id="contactUsform" onsubmit="handleSubmit(event)">
+
+                        <fieldset>
+                            <div class="fieldsetDivs">
+                                <label for="fullName">Nombre completo: *</label>
+                                <input id="fullName" name="fullName" type="text" value="" placeholder="Nombre completo">
+                            </div>
+
+                            <div class="fieldsetDivs">
+                                <label for="messageReason">Seleccione la razón del mensaje: *</label>
+                                <select  id="messageReason" name="messageReason">
+                                    <option value="">Seleccione razón del mensaje</option>
+                                    <option value="complaint">Quejas</option>
+                                    <option value="suggestions">Sugerencias</option>
+                                    <option value="personalizedOrder">Orden Personalizada</option>
+                                    <option value="other">Otros</option>
+                                </select>
+                            </div>
+
+                            <div class="fieldsetDivs">
+                                <label for="email">Tu email: *</label>
+                                <input id="email" name="email" type="email" value="" placeholder="Tu Email" >
+                            </div>
+                        </fieldset>
+
+                        <label for="message">Tu mensaje: *</label>
+                        <textarea id="message" name="message" placeholder="Tu mensaje" ></textarea>                        
+
+                        <div class="imageDiv">
+                            <label for="image">Incluir imagen (opcional):</label>
+                            <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg, .gif">
+                        </div>
+
+                        <div class="checkboxDiv">
+                            <label for="checkbox"><a href="#termsAndConditions">Aceptar los terminos y condiciones *</a></label>
+                            <input id="checkbox" name="accept" type="checkbox" >
+                        </div>
+
+                        <input id="submitButton" type="submit" value="ENVIAR">
+                    </form>
+                </div>
+            </section>
+
+            <section id="termsAndConditions">
+                <h2>TERMINOS Y CONDICIONES</h2>
+
+                <h3>1. Aceptación de los Términos</h3>
+                <p>Al enviar un formulario de contacto en nuestro sitio web, usted acepta cumplir con los siguientes términos y condiciones. Si no está de acuerdo con alguno de estos términos, por favor, no utilice nuestro formulario de contacto.</p>
+
+                <h3>2. Uso del Formulario de Contacto</h3>
+                <p>Al enviar un formulario de contacto en nuestro sitio web, usted acepta cumplir con los siguientes términos y condiciones. Si no está de acuerdo con alguno de estos términos, por favor, no utilice nuestro formulario de contacto.</p>
+
+                <h3>3. Información Personal</h3>
+                <p>Al utilizar el formulario de contacto, se le solicitará que proporcione cierta información personal, como su nombre y dirección de correo electrónico. Usted garantiza que la información proporcionada es precisa y veraz. Nos comprometemos a proteger su privacidad y a utilizar su información personal únicamente para responder a su consulta.</p>
+
+                <h3>4. Uso de la Información</h3>
+                <p>La información proporcionada a través del formulario de contacto será utilizada exclusivamente para responder a su consulta y para mejorar nuestros servicios. No compartiremos su información con terceros sin su consentimiento previo, excepto cuando sea necesario para cumplir con la ley o para proteger nuestros derechos.</p>
+
+                <h3>5. Propiedad Intelectual</h3>
+                <p>Todo el contenido proporcionado en el formulario de contacto, incluyendo pero no limitado a, textos, gráficos, logos y software, es propiedad de Delicrave y está protegido por las leyes de propiedad intelectual aplicables.</p>
+
+                <h3>6. Exoneración de Responsabilidad</h3>
+                <p>Delicrave no será responsable de ningún daño directo, indirecto, incidental, especial, consecuente o ejemplar, incluyendo pero no limitado a, daños por pérdida de beneficios, uso, datos u otras pérdidas intangibles, que resulten del uso del formulario de contacto.</p>
+
+                <h3>7. Modificaciones de los Términos y Condiciones</h3>
+                <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Cualquier cambio será publicado en esta página, y se considerará que usted acepta dichos cambios si continúa utilizando el formulario de contacto después de la publicación de las modificaciones.</p>
+
+                <h3>8. Ley Aplicable</h3>
+                <p>Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes del país, sin dar efecto a ningún principio de conflictos de leyes.</p>
+
+                <h3>9. Contacto</h3>
+                <p>Si tiene alguna pregunta sobre estos términos y condiciones, puede ponerse en contacto con nosotros a través del formulario de contacto</p>
+            </section>
+        </main>
+
+        <script src="/src/scripts/navbar.js"></script>
+        <script src="/src/components/navbar/navbar.js"></script>
+        <script src="/src/scripts/contactUs.js"></script>
+    </body>
+</html>
