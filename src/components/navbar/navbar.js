@@ -4,9 +4,10 @@ function navBbar() {
                                                     '<p onclick="navbarClick()">☰</p>'+
                                                   '</div>'+
                                                   '<ul id="navBarBottom">'+
-                                                    '<li><a href="/src/index.html">HOME</a></li>'+
-                                                    '<li><a href="/src/views/catalogue/catalogue.html">CATALOGUE</a></li>'+
-                                                    '<li><a href="/src/views/aboutUs/aboutUs.html">ABOUT US</a></li>'+
-                                                    '<li><a href="/src/views/locations/locations.html">LOCATIONS</a></li>'+
+                                                    '<li><a href="/src/index.html">INICIO</a></li>'+
+                                                    '<li><a href="/src/views/catalogue/catalogue.html">CATALOGO</a></li>'+
+                                                    '<li><a href="/src/index.html#aboutUs">SOBRE NOSOTROS</a></li>'+
+                                                    '<li><a href="/src/views/contactUs/contactUs.html">CONTACTO</a></li>'+
+                                                    '<li><a href="/src/views/locations/locations.html">LOCACION</a></li>'+
                                                   '</ul>';
 }

@@ -1,0 +1,61 @@
+body { 
+    background-color: #F7D7E0;
+}
+
+.logo {
+    background-color: #F7D7E0;
+    display:flex;
+    width: 50%;
+    align-items:center;
+    justify-content:center;
+    width: 50%;
+    height:100vh;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    width: 50%;
+}
+
+.crousel-inner{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+#juntos{
+    display: flex;
+    align-content: flex-start;
+}
+
+.ar-one-sans{
+    font-family: "AR One Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: bold;
+    font-variation-settings: "ARRR" 10;
+  }
+  
+h2{
+    display: flex;
+    justify-content: center;
+}
+.sobre-nosotros{
+    text-align: justify;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem 3rem 0rem ;
+    padding: 0rem 3rem 0rem 3rem;
+
+}
