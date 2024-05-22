@@ -95,16 +95,25 @@ main {
     main {
         padding: 0 2rem;
     }
+    #locationSection {
+        margin: 12rem 0rem 6rem 0rem !important;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
     main {
         padding: 0 2rem;
     }
+    #locationSection {
+        margin: 12rem 0rem 6rem 0rem !important;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
     main {
         padding: 0;
+    }
+    #locationSection {
+        margin: 12rem 0rem 6rem 0rem !important;
     }
 }
