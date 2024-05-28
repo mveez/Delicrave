@@ -19,7 +19,7 @@ function navbarClick() {
 function navBbar() {
   document.getElementById("navBar").innerHTML = `
     <div class="navBarTop">
-      <a href="/src/index.html">DELICRAVE</a>
+      <a href="index.html">DELICRAVE</a>
       <p onclick="navbarClick()">☰</p>
     </div>
     <ul id="navBarBottom">
