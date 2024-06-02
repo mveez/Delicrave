@@ -1,0 +1,435 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color: black;
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3bfce;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}
+
+#navBar .navBarTop {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    padding: 0rem 2rem;
+}
+
+#navBar .navBarTop a {
+    font-size: 3.35rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color: tomato;
+    text-align: center;
+    background-color: transparent;
+}
+
+#navBar .navBarTop p {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+#navBar .navBarTop p {
+    cursor: pointer;
+}
+    
+#navBarBottom {
+    display: flex;
+}
+
+#navBar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    background-color: transparent;
+}
+
+#navBarBottom li:last-child {
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+#navBar li {
+    width: auto;
+    font-size: 2rem;
+    text-align: center;
+    list-style: none;
+    font-weight: bolder;
+    background-color: transparent;
+    color: black;
+}
+
+#navBar li:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+#navBar li a {
+    display: inline;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;      
+    color: black;
+    padding: 1.75rem 1.25rem;
+}
+
+/* ---------------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+
+    #navBar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 100%;
+        position: static;
+        padding: 2rem 2rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: visible;
+    }
+    
+    #navBarBottom {
+        display: none;
+    }
+    
+    #navBar ul {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+    
+    #navBarTop {
+        display: none;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    
+    #navBar li {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0rem 0rem;
+    }
+    
+    #navBar li a {
+        display: block;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1.25rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 576px) and (max-width: 767px)) {
+    
+    #navBar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 100%;
+        position: static;
+        padding: 2rem 2rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: visible;
+    }
+    
+    #navBarBottom {
+        display: none;
+    }
+    
+    #navBar ul {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    
+    #navBar li {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0rem 0rem;
+    }
+    
+    #navBar li a {
+        display: block;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1.25rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 768px) and (max-width: 991px)) {
+
+    #navBar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 100%;
+        position: static;
+        padding: 2rem 2rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: visible;
+    }
+    
+    #navBarBottom {
+        display: none;
+    }
+    
+    #navBar ul {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    
+    #navBar li {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0rem 0rem;
+    }
+    
+    #navBar li a {
+        display: block;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1.25rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 992px) and (max-width: 1199px)) {
+
+    #navBar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 15%;
+        position: fixed;
+        padding: 0rem 1.5rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: hidden;
+    }
+    
+    #navBarBottom {
+        display: flex !important;
+    }
+    
+    #navBar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    
+    #navBar li {
+        width: auto;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0rem;
+    }
+    
+    #navBar li a {
+        display: inline;
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 1200px) and (max-width: 1439px)) {
+
+    #navBar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 15%;
+        position: fixed;
+        padding: 0rem 2rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: hidden;
+    }
+    
+    #navBarBottom {
+        display: flex !important;
+    }
+    
+    #navBar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0rem;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    
+    #navBar li {
+        width: auto;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0rem;
+    }
+    
+    #navBar li a {
+        display: inline;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem 0.85rem;
+    }
+}
+
+@media only screen and ((min-width: 1440px)) {
+
+    #navBar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    #navBar .navBarTop {
+        width: 15%;
+        position: fixed;
+        padding: 0rem 2rem;
+    }
+    
+    #navBar .navBarTop a {
+        font-size: 3.35rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #navBar .navBarTop p {
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        visibility: hidden;
+    }
+    
+    #navBarBottom, ul {
+        display: flex !important;
+    }
+
+    #navBarBottom li:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    
+    #navBarBottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3rem;
+    }
+    
+    #navBar li {
+        width: auto;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0rem;
+    }
+    
+    #navBar li a {
+        display: inline;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem 1.25rem;
+    }
+}
