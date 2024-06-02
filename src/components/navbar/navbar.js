@@ -9,7 +9,7 @@ function navBbar() {
                                                   '<ul id="navBarBottom">'+
                                                     '<li><a href="index.html">INICIO</a></li>'+
                                                     '<li><a href="./src/views/catalogue/catalogue.html">CATALOGO</a></li>'+
-                                                    '<li><a href="index.html#sobre-nosotros">SOBRE NOSOTROS</a></li>'+
+                                                    '<li><a href="index.html#sobre-nosotros" onclick="aboutUsChanger()">SOBRE NOSOTROS</a></li>'+
                                                     '<li><a href="./src/views/contactUs/contactUs.html">CONTACTO</a></li>'+
                                                     '<li><a href="./src/views/locations/locations.html">LOCACION</a></li>'+
                                                   '</ul>';

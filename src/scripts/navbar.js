@@ -1,7 +1,6 @@
 let state = true;
 
 function navbarClick() {
-
     const navBarBottom = document.getElementById("navBarBottom");
     const firstSection = document.getElementsByClassName("firstSection");
 
@@ -14,4 +13,13 @@ function navbarClick() {
         firstSection[0].style.margin = "12rem 0rem";
         state = true;
     }
+}
+
+function aboutUsChanger() {
+    const navBarBottom = document.getElementById("navBarBottom");
+    const firstSection = document.getElementsByClassName("firstSection");
+
+    navBarBottom.style.display = "none";
+    firstSection[0].style.margin = "12rem 0rem";
+    state = true;
 }
