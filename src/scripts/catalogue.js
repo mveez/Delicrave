@@ -27,7 +27,7 @@ let desserts = [
     {
         id : 3,
         image : "./../../assets/images/91861e7dc91dbd3b9f3ec6566e1a5f04.jpg",
-        nameDessert : "Pie de Limon",
+        nameDessert : "Pie de Limón",
         type : "cake",
         price : "$5000 | Entera",
     },
