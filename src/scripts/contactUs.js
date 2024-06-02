@@ -17,7 +17,7 @@ function handleSubmit(e) {
     console.log("fullName: " + fullName + " | messageReason: " + messageReason + " | email: " + email + " | message: " + message + " | image: " + image + " | checkbox: " + checkbox);
 
     if(!fullName || !messageReason || !email || !message || !checkbox) {
-        alert("Please fill all fields");
+        alert("Por favor llene todos los campos");
         return;
     }
 
@@ -55,9 +55,9 @@ function handleSubmit(e) {
             window.location = "./../../../index.html";
 
         } else {
-            alert("Please enter a valid email!");
+            alert("Por favor ingrese un email válido!");
         }
     } else {
-        alert("Please enter a full name valid! It must be between 5 and 100 characters.");
+        alert("Por favor ingrese un nombre completo válido! Debe tener entre 5 y 100 caracteres");
     }
 }
