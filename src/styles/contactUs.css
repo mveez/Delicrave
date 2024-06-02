@@ -1,0 +1,430 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color: black;
+}
+
+body {
+    background-color: #fdf4f9;
+}
+
+main {
+    width: 140rem;
+    margin: auto;
+    padding: 0rem 0rem;
+}
+
+#formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 12rem 0rem 6rem 0rem;
+}
+
+#formSection h1 {
+    font-size: 3.35rem;
+}
+
+#formSection .formSectionP {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    color: tomato;
+}
+
+.formSectionDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem;
+    padding: 5rem 3rem 6rem 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#contactUsform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contactUsform fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    text-align: start;
+    border: none;
+}
+
+.fieldsetDivs {
+    width: 33%;
+}
+
+#contactUsform label, #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform .checkboxDiv a {
+    width: 100%;
+    font-size: 1.75rem;
+    text-align: left;
+}
+
+#contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+    font-size: 1.5rem;
+    margin: 1.25rem 0rem 3.5rem 0rem;
+    padding: 1rem 1rem;
+}
+
+#contactUsform .imageDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#contactUsform .imageDiv label {
+    width: auto;
+}
+
+#contactUsform #image {
+    width: auto;
+    padding: 0rem 0rem;
+}
+
+#contactUsform textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 128px;
+}
+
+#contactUsform .checkboxDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0rem 0rem 2.75rem 0rem;
+    padding: 0rem 0rem;
+}
+
+#contactUsform .checkboxDiv a {
+    font-size: 1.75rem;
+}
+
+#contactUsform #checkbox {
+    width: auto;
+    margin: 0.75rem 0.75rem 0.75rem 0rem;
+}
+
+#contactUsform #submitButton {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.25rem 0rem;
+    margin-bottom: 0rem;
+    background-color: #f3bfce;
+    border-radius: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------------------------------------- */
+
+#termsAndConditions {
+    text-align: justify;
+    scroll-margin-top: 12rem;
+    margin: 6rem 3rem 6rem 3rem;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #f3bfce;
+    padding: 5rem 5rem;
+    border-radius: 1rem;
+}
+
+#termsAndConditions h2 {
+    margin: 5rem 0rem;
+}
+
+#termsAndConditions h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+#termsAndConditions h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
+}
+
+#termsAndConditions p {
+    font-size: 1.65rem;
+    margin: 0.5rem 0rem 5rem 0rem;
+}
+
+#termsAndConditions p:last-child {
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+
+/* ---------------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem;
+        margin-bottom: 3rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 0rem 6rem 0rem;
+    }
+
+    #contactUsform fieldset {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .fieldsetDivs {
+        width: 100%;
+    }
+    
+    #termsAndConditions {
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 5rem 3rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 576px) and (max-width: 767px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem;
+        margin-bottom: 3rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 2rem 6rem 2rem;
+    }
+
+    #contactUsform fieldset {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .fieldsetDivs {
+        width: 100%;
+    }
+    
+    #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+        margin: 1.25rem 0rem 1.25rem 0rem;
+    }
+    
+    #termsAndConditions {
+        margin: 0rem 2rem 4rem 2rem;
+        padding: 5rem 3rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 768px) and (max-width: 991px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem;
+        margin-bottom: 3rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 3rem 6rem 3rem;
+    }
+
+    #contactUsform fieldset {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .fieldsetDivs {
+        width: 100%;
+    }
+    
+    #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+        margin: 1.25rem 0rem 1.25rem 0rem;
+    }
+    
+    #termsAndConditions {
+        margin: 0rem 3rem 4.6rem 3rem;
+        padding: 5rem 3rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 992px) and (max-width: 1199px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem !important;
+        margin-bottom: 6rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 3rem 6rem 3rem;
+    }
+
+    #contactUsform fieldset {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    }
+    
+    .fieldsetDivs {
+    width: 33%;
+    }
+    
+    #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+        margin: 1.25rem 0rem 1.25rem 0rem;
+    }
+    
+    #termsAndConditions {
+    margin: 6rem 3rem 6rem 3rem;
+    padding: 5rem 5rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 1200px) and (max-width: 1439px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 3rem 6rem 3rem;
+    }
+
+    #contactUsform fieldset {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    }
+    
+    .fieldsetDivs {
+    width: 33%;
+    }
+    
+    #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+        margin: 1.25rem 0rem 1.25rem 0rem;
+    }
+    
+    #termsAndConditions {
+    margin: 6rem 3rem 6rem 3rem;
+    padding: 5rem 5rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+@media only screen and ((min-width: 1440px)) {
+
+    main {
+        width: 140rem;
+        margin: auto;
+        padding: 0rem 0rem;
+    }
+
+    #formSection {
+        margin: 12rem 0rem !important;
+    }
+
+    .formSectionDiv {
+        padding: 5rem 3rem 6rem 3rem;
+    }
+
+    #contactUsform fieldset {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    }
+    
+    .fieldsetDivs {
+    width: 33%;
+    }
+
+    #contactUsform input, #contactUsform select, #contactUsform option, #contactUsform textarea, #contactUsform #image {
+        margin: 1.25rem 0rem 3.5rem 0rem;
+    }
+    
+    #termsAndConditions {
+    margin: 6rem 3rem 6rem 3rem;
+    padding: 5rem 5rem;
+    }
+
+    #termsAndConditions p:last-child {
+        margin: 0.5rem 0rem 0rem 0rem;
+    }
+}

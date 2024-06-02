@@ -1,0 +1,153 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color: black;
+}
+
+body {
+    background-color: #fdf4f9;
+}
+
+main {
+    width: 140rem;
+    margin: auto;
+    padding: 0rem 0rem;
+}
+
+#catalogueSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 12rem 0rem;
+}
+
+#catalogueSection h1 {
+    font-size: 3.35rem;
+}
+
+#catalogueSection .catalogueSectionP {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    color: tomato;
+}
+
+#catalogueItemsSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 0rem;
+    padding: 2rem 0rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem;
+    }
+
+    #catalogueItemsSection {
+        justify-content: center;
+    }
+}
+
+@media only screen and ((min-width: 576px) and (max-width: 767px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem;
+    }
+
+    #catalogueItemsSection {
+        justify-content: center;
+    }
+}
+
+@media only screen and ((min-width: 768px) and (max-width: 991px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem;
+    }
+
+    #catalogueItemsSection {
+        justify-content: center;
+    }
+}
+
+@media only screen and ((min-width: 992px) and (max-width: 1199px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem !important;
+    }
+
+    #catalogueItemsSection {
+        justify-content: center;
+    }
+}
+
+@media only screen and ((min-width: 1200px) and (max-width: 1439px)) {
+
+    main {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem !important;
+    }
+
+    #catalogueItemsSection {
+        justify-content: center;
+    }
+}
+
+@media only screen and ((min-width: 1440px)) {
+
+    main {
+        width: 140rem;
+        margin: auto;
+        padding: 0rem 0rem;
+    }
+
+    #catalogueSection {
+        margin: 12rem 0rem !important;
+    }
+    
+    #catalogueItemsSection {
+        justify-content: space-between;
+    }
+}
