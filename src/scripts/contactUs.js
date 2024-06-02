@@ -17,7 +17,7 @@ function handleSubmit(e) {
     console.log("fullName: " + fullName + " | messageReason: " + messageReason + " | email: " + email + " | message: " + message + " | image: " + image + " | checkbox: " + checkbox);
 
     if(!fullName || !messageReason || !email || !message || !checkbox) {
-        alert("Please fill all filds");
+        alert("Please fill all fields");
         return;
     }
 
