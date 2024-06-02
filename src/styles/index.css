@@ -1,0 +1,404 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  color: black;
+}
+
+body {
+  background-color: #fddede;
+}
+
+main {
+    width: 140rem;
+    margin: auto;
+    padding: 0rem 0rem;
+}
+
+/* LOGO + CARRTOUSEL CONTAINER */
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: transparent;
+  margin: 6.5rem 0rem 0rem 0rem;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fddede;
+}
+
+#imagen {
+  height: auto;
+  width: auto;
+}
+
+/* CARROUSEL CONTAINER */
+.carrouselContainer {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 997;
+}
+
+.buttonsArrows {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 998;
+}
+
+.slideshow-container a {
+  display: flex;
+  align-items: center;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.imageSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0rem 0rem 5rem 0rem;
+  z-index: 1000;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.75rem;
+  width: 1.75rem;
+  margin: 0 2rem;
+  background-color: rgba(175, 175, 175, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 998;
+  border: 2px solid black;
+}
+
+.active, .dot:hover {
+  background-color: rgba(58, 53, 53, 0.5);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.prev, .next {
+  height: 100%;
+  font-size: 4.5rem;
+  color: white;
+  padding: 1rem;
+  text-align: end;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* SOBRE NOSOTROS */
+
+#sobre-nosotros {
+  background-color: white;
+  margin: 0rem;
+  padding: 12rem 0rem 10rem 0rem;
+}
+
+.ar-one-sans {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "AR One Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "ARRR" 10;
+  margin: 0rem 0rem 5rem 0rem;
+}
+
+#sobre-nosotros p {
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0rem 0rem 5rem 0rem;
+  padding: 0rem 20rem;
+}
+
+
+/* ---------------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+
+  main {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 11rem 0rem 0rem 0rem;
+    margin-bottom: 0rem !important;
+  }
+
+  .logo {
+    width: 100%;
+    background-color: rgba(255, 214, 223, 1);
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  
+  #imagen {
+    height: auto;
+    width: 50%;
+  }
+
+  .carrouselContainer {
+    width: 100%;
+    height: 38rem;
+  }
+
+  .dots {
+    padding: 0rem 0rem 1.25rem 0rem;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2rem;
+    padding: 0rem 1.75rem;
+  }
+}
+
+@media only screen and ((min-width: 576px) and (max-width: 767px)) {
+
+  main {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 11rem 0rem 0rem 0rem;
+    margin-bottom: 0rem !important;
+  }
+
+  .logo {
+    width: 100%;
+    background-color: rgba(255, 214, 223, 1);
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  
+  #imagen {
+    height: auto;
+    width: auto;
+  }
+
+  .carrouselContainer {
+    width: 100%;
+    height: 48rem;
+  }
+
+  .dots {
+    padding: 0rem 0rem 1.25rem 0rem;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2rem;
+    padding: 0rem 1.75rem;
+  }
+}
+
+@media only screen and ((min-width: 768px) and (max-width: 991px)) {
+
+  main {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 11rem 0rem 0rem 0rem;
+    margin-bottom: 0rem !important;
+  }
+
+  .logo {
+    width: 100%;
+    background-color: rgba(255, 214, 223, 1);
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  
+  #imagen {
+    height: auto;
+    width: auto;
+  }
+
+  .carrouselContainer {
+    width: 100%;
+    height: 65rem;
+  }
+
+  .dots {
+    padding: 0rem 0rem 1.25rem 0rem;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2.25rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and ((min-width: 992px) and (max-width: 1199px)) {
+
+  main {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 6.5rem 0rem 0rem 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+
+  .logo {
+    width: 50%;
+    background-color: transparent;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  
+  #imagen {
+    height: auto;
+    width: auto;
+  }
+
+  .carrouselContainer {
+    width: 50%;
+    height: 80vh;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2.25rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and ((min-width: 1200px) and (max-width: 1439px)) {
+
+  main {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0rem 0rem 0rem 0rem !important;
+  }
+
+  .logo {
+    width: 50%;
+    background-color: transparent;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  
+  #imagen {
+    height: auto;
+    width: auto;
+  }
+
+  .carrouselContainer {
+    width: 50%;
+    height: 95vh;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2.25rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media only screen and ((min-width: 1440px)) {
+
+  main {
+    width: 100%;
+    margin: auto;
+    padding: 0rem 0rem;
+  }
+
+  #container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 6.5rem 0rem 0rem 0rem !important;
+  }
+
+  .logo {
+    width: 50%;
+  }
+  
+  #imagen {
+    height: auto;
+    width: auto;
+  }
+
+  .carrouselContainer {
+    width: 50%;
+    height: 95vh;
+  }
+
+  #sobre-nosotros p {
+    font-size: 2.75rem;
+    padding: 0rem 20rem;
+  }
+}
